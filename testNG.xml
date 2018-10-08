@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Third suite" verbose="1" thread-count="2" parallel="classes">
+    <test name = "aFewTestsFromAClass" >
+        <classes>
+            <class name="selenium.demo.MailRegister">
+              <methods>
+                 <include name = "register" />
+              </methods>
+            </class>
+            <class name="selenium.demo.TestClass">
+                <methods>
+                    <include name = "test1" />
+                </methods>
+            </class>
+   </classes>
+</test>
+</suite>
